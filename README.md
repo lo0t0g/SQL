@@ -45,6 +45,7 @@ Luego la cartera según el método FIFO resulta:
           ES9389484   A Inc.          **VENTA**             08-08-2024             10           9                   
 
 Pero la cartera REAL es: 
+
           ISIN        Nombre      tipo_de_operacion      fecha_adquisicion      Cantidad      Precio
           ES9389484   A Inc.           COMPRA               01-01-2024             5            10        --LOTE 1
           ES9389484   A Inc.           COMPRA               02-02-2024             0            11        --LOTE 2: Se han vendido todas las acciones de este LOTE
