@@ -22,6 +22,9 @@ posiciones diferentes (y a diferentes precios, normalmente), proponemos dos punt
      (esto es, fecha de operación de compra), del lote de acciones que se van a vender. Esto afecta a la CANTIDAD DE DIVIDENDOS que mencionamos en el primer punto.
      En caso de que no se produzca ninguna venta, elegimos por defecto que la fecha_referencia sea _12-12-9999_.
 
+     **NOTA IMPORTANTE**: Por facilidad en la redacción de esta breve documentación, FECHA_REFERENCIA será del tipo _DATETIME_. **No obstante, en el modelo de datos será del tipo
+     TIMESTAMP (2017-07-23 00:00:00)** para asegurar la unicidad a la hora de elegir el grupo de acciones que se va a vender.
+
 Ejemplo: Tenemos parte de una empresa llamada _A Inc._ a través de acciones. Hicimos las siguientes operaciones de compra:
 
           ISIN        Nombre      tipo_de_operacion      fecha_de_operacion     fecha_referencia         Cantidad      Precio
