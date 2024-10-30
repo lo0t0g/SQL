@@ -3,10 +3,22 @@ Proyectos realizados con SQL
 
 Para información detallada y explicaciones de las validaciones, progresos y futuras actualizaciones, LEER LOS ARCHIVOS "nombre.png"
 
-**CANTIDAD_dividendos_PENDIENTE.sql**: Soluciona la problemática acerca de la cantidad de dividendos que se apuntarán contablemente y/o que finalmente se cobrarán de manera efectiva. 
-El problema surge dependiendo de la operativa de COMPRA y/o VENTA en fechas importantes como la fecha_ex_dividendo y fecha_cobro. 
+**selects_creates_tablas_DEFINITIVO.sql**: Todas las tablas de la BBDD.
 
-MÁS DETALLES EN: _control_dividendos.jpg_
+**control_CANTIDAD_dividendos_FIFO.sql.sql**: Soluciona la problemática acerca de la cantidad de dividendos que se apuntarán contablemente y/o que finalmente se cobrarán de manera efectiva. 
+El problema surge dependiendo de la operativa de COMPRA y/o VENTA en fechas importantes como la fecha_ex_dividendo y fecha_cobro. NO se actualiza la columna CANTIDAD de la tabla 'DIVIDENDOS'.
+De hecho, se estudia la posibildad de eliminar esa columna de dicha tabla, reduciendo así el número escrituras entre tablas con T-SQL.
+
+MÁS DETALLES EN: _control_dividendos.jpg_ y _Documentacion_general_BBDD.png_:
+
+![Documentación de parte del proceso T-SQL](Documentacion_general_BBDD.png)
+
+**CARTERA_REAL_NO_FIFO.sql**: Se actualiza la columna CANTIDAD de la tabla 'CARTERA' en una nueva tabla CARTERA_REAL_NO_FIFO. De esta forma, la tabla 
+'CARTERA' actúa como un histórico de operaciones de COMPRA y VENTA de valores sin seguir el método FIFO. Más detalles en el Ejemplo al final de este
+README.
+
+**CARTERA_REAL_NO_FIFO_sin_TSQL.sql**: NO se actualiza la columna CANTIDAD de la tabla 'CARTERA', simplemente se extraen las CANTIDADES ACTUALIZADAS a través
+de JOINs entre tablas, sin actualizar campos. Este SQL no se utilizará de cara al dashboard en PowerBI, aunque está bien para realizar pruebas y validaciones.
 
 **CONTROL_nuevos_registros.sql**: En cada ingesta de datos estamos utilizando el mismo Excel. Añadiendo este trigger en las tablas principales establecemos:
   1. CONTROL DE LOS MOMENTOS DEL TIEMPO EN QUE LOS REGISTROS SON INGESTADOS EN LA BBDD.
