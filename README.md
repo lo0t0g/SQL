@@ -5,7 +5,7 @@ Para información detallada y explicaciones de las validaciones, progresos y fut
 
 **selects_creates_tablas_DEFINITIVO.sql**: Todas las tablas de la BBDD.
 
-**control_CANTIDAD_dividendos_FIFO.sql.sql**: Soluciona la problemática acerca de la cantidad de dividendos que se apuntarán contablemente y/o que finalmente se cobrarán de manera efectiva. 
+**control_CANTIDAD_dividendos_FIFO.sql**: Soluciona la problemática acerca de la cantidad de dividendos que se apuntarán contablemente y/o que finalmente se cobrarán de manera efectiva. 
 El problema surge dependiendo de la operativa de COMPRA y/o VENTA en fechas importantes como la fecha_ex_dividendo y fecha_cobro. NO se actualiza la columna CANTIDAD de la tabla 'DIVIDENDOS'.
 De hecho, se estudia la posibildad de eliminar esa columna de dicha tabla, reduciendo así el número escrituras entre tablas con T-SQL.
 
