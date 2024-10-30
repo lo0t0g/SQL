@@ -68,7 +68,7 @@ Pero la cartera REAL es:
           ES9389484   A Inc.           COMPRA               03-03-2024            12-12-9999        10           9         --LOTE 3
           ES9389484   A Inc.          **VENTA**             08-08-2024           **02-02-2024**     10           9                   
 
-NOTA IMPORTANTE: A la hora del cálculo de los dividendos, hay que tener en cuenta la CARTERA REAL, tanto para Hacienda como para nosotros, ya que **los dividendos** son 'distintos' a nivel fiscal.
+NOTA IMPORTANTE: A la hora del cálculo de los dividendos, hay que tener en cuenta la CARTERA REAL, tanto para Hacienda como para nosotros, ya que **los dividendos** tienen distinto tratamiento a nivel fiscal.
 Sin embargo, para **las plusvalías**, en el caso de Hacienda hay que utilizar el método FIFO de cara a la declaración de la Renta. Aunque habrá que tener en cuenta la cartera real para futuras plusvalías
 generadas (que serán distintas a nivel de Hacienda), pero importantes para la planificación financiera.
 
